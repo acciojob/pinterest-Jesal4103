@@ -1,16 +1,86 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <title>Pinterest Hero Section</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px;
+      height: 100vh;
+    }
+
+    .hero img {
+      width: 60%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .hero-content {
+      width: 35%;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    .hero-content p {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+
+    .hero-content a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .hero img,
+      .hero-content {
+        width: 100%;
+      }
+
+      .hero-content {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <div class="hero">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Nature Image">
+    <div class="hero-content">
+      <h1>Welcome to my Pinterest clone</h1>
+      <p>Discover new inspiration and save your favorite ideas</p>
+      <a href="#">Explore now</a>
+    </div>
+  </div>
 
 </body>
-
 </html>
